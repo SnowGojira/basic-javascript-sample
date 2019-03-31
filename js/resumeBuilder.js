@@ -49,7 +49,23 @@ var education = {
 };
 
 var work = {
+    jobs : [
+        {
+            employer : "IBM",
+            title : "Software Procurement Agent",
+            location : "ChengDu",
+            dates : "2013-2015",
+            description : "Engaged in software procurement business to Japanese Customers. Mainly responsible for the daily software purchases to Japanese customers, partial business assignment to the customers in Europe or Hong Kong. At the same time, analyse statistical data on procurement, optimize quotation processes, and sort the supplier's list."
+        },
 
+        {
+            employer: "ChengDu Kaiqiang Culture Company",
+            title: "Technical partner",
+            location: "ChengDu",
+            dates: "2017-2019",
+            description: "Charged for all the company's technical operations"
+        }
+    ]
 };
 
 var projects = {
