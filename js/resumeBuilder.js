@@ -10,9 +10,9 @@ var bio = {
         github : "https://github.com/SirSnow",
         location : "ChengDu"
     },
-    welcomeMessage : "",
+    welcomeMessage : "My name means snow, so I made a website with such a theme.Although I am a girl, I hope I can make some achievements in the field of programming, break the stereotype, and make my own contribution to the equality of men and women.",
     skills : ["Html5","Photoshop","Adobe Illustrator","Motion Graphic","Leadership"],
-    biopic : "",
+    biopic : ["images/images/photo_xs.jpg","images/photo_xm.jpg","images/photo_xl.jpg"],
     display : function () {
 
     }
