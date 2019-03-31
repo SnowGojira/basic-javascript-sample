@@ -19,6 +19,32 @@ var bio = {
 };
 
 var education = {
+    school : [
+        {
+            name : "Osaka University",
+            location : "Osaka",
+            degree : "Master",
+            majors : ["Physics","Japanese"],
+            dates : "2010-2013"
+         }
+    ],
+    onlineCourses : [
+        {
+            title : "Front end nano-degree",
+            school : "Udacity",
+            dates : "2017-2019",
+            url : "https://www.udacity.com/"
+        },
+        {
+            title : "Vue Workshop",
+            school : "frontend Master",
+            dates : "2018-2019",
+            url : "https://frontendmasters.com/"
+        }
+    ],
+    display : function () {
+        
+    }
 
 };
 
