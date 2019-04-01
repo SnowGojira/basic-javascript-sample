@@ -3,6 +3,8 @@ Create the json object will be used
  */
 var bio_name = $("#bio_name");
 var bio_photo = $("#bio_photo");
+var bio_intro = $("#bio_intro");
+var bio_skills = $("#bio_skills");
 
 var bio = {
     name : "HAKU HAL",
@@ -24,6 +26,12 @@ var bio = {
         /*display photo
         * new RegExp() can make the replace item to be global item*/
         bio_photo.append(HTMLbioPic.replace(new RegExp("%data%", "g"),this.biopic));
+
+        /*display welcome message*/
+        bio_intro.append(this.welcomeMessage);
+
+        /*display all the skills*/
+
 
 
 
@@ -88,9 +96,12 @@ var projects = {
             title : "",
             dates : "",
             description : "",
-            image : ""
+            images : [""]
         }
-    ]
+    ],
+    display : function () {
+
+    }
 
 };
 

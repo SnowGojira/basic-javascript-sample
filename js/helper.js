@@ -16,6 +16,12 @@ var HTMLheaderName = '<h1 class="text-thin">%data%</h1>';
 var HTMLheaderRole = '<h4 class="text-thick">%data%</h4>';
 var HTMLbioPic = '<img class="img-fluid" src="%data%'+'_xs.jpg" srcset="%data%'+'_xs.jpg 450w, %data%'+'_xm.jpg 700w, %data%'+'_xl.jpg 900w" sizes="100vw" alt="photo"/>';
 
+var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
+
+var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
+var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
+
+
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
 var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
@@ -25,10 +31,7 @@ var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
 
 
-var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
