@@ -1,6 +1,9 @@
 /*
 Create the json object will be used
  */
+var bio_name = $("#bio_name");
+var bio_photo = $("#bio_photo");
+
 var bio = {
     name : "HAKU HAL",
     role : "FRONT-END NINJA",
@@ -12,11 +15,21 @@ var bio = {
     },
     welcomeMessage : "My name means snow, so I made a website with such a theme.Although I am a girl, I hope I can make some achievements in the field of programming, break the stereotype, and make my own contribution to the equality of men and women.",
     skills : ["Html5","Photoshop","Adobe Illustrator","Motion Graphic","Leadership"],
-    biopic : ["images/images/photo_xs.jpg","images/photo_xm.jpg","images/photo_xl.jpg"],
+    biopic : "images/photo",
     display : function () {
+        /*display header*/
+        bio_name.append(HTMLheaderName.replace("%data%",this.name));
+        bio_name.append(HTMLheaderRole.replace("%data%",this.role));
+
+        /*display photo*/
+        bio_photo.append(HTMLbioPic.replaceAll("%data%",this.biopic));
+        console.log(HTMLbioPic.replace("%data%",this.biopic));
+
 
     }
 };
+
+bio.display();
 
 var education = {
     school : [
@@ -69,6 +82,14 @@ var work = {
 };
 
 var projects = {
+    projects : [
+        {
+            title : "",
+            dates : "",
+            description : "",
+            image : ""
+        }
+    ]
 
 };
 

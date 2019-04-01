@@ -125,7 +125,9 @@ a:hover {
     text-decoration: none;
 
 }
-
+.skill{
+    font-size: 1rem;
+}
 .snow {
     font-size: 0.7rem;
 }
