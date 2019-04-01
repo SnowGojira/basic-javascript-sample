@@ -27,10 +27,22 @@ var bio = {
         * new RegExp() can make the replace item to be global item*/
         bio_photo.append(HTMLbioPic.replace(new RegExp("%data%", "g"),this.biopic));
 
-        /*display welcome message*/
-        bio_intro.append(this.welcomeMessage);
+        /*display the details of self-introduce*/
+        bio_intro.append(HTMLwelcomeMsg.replace("%data%",this.welcomeMessage));
+        // bio_intro.append(HTMLskillsStart);
 
         /*display all the skills*/
+        /*TODO need to find out a way to add the span dynamic*/
+        var skills = this.skills;
+        console.log(skills);
+        for (skill in skills){
+            bio_intro.append(HTMLskillsStart);
+            bio_skills.append(HTMLskills.replace("%data%",skills[skill])+" ");
+        }
+
+
+
+
 
 
 
