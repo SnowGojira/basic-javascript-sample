@@ -24,7 +24,7 @@ var bio = {
         /*display photo
         * new RegExp() can make the replace item to be global item*/
         bio_photo.append(HTMLbioPic.replace(new RegExp("%data%", "g"),this.biopic));
-        console.log(HTMLbioPic.replace(new RegExp("%data%", "g"),this.biopic));
+
 
 
     }
