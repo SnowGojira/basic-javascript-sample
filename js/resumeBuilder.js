@@ -21,9 +21,10 @@ var bio = {
         bio_name.append(HTMLheaderName.replace("%data%",this.name));
         bio_name.append(HTMLheaderRole.replace("%data%",this.role));
 
-        /*display photo*/
-        bio_photo.append(HTMLbioPic.replaceAll("%data%",this.biopic));
-        console.log(HTMLbioPic.replace("%data%",this.biopic));
+        /*display photo
+        * new RegExp() can make the replace item to be global item*/
+        bio_photo.append(HTMLbioPic.replace(new RegExp("%data%", "g"),this.biopic));
+        console.log(HTMLbioPic.replace(new RegExp("%data%", "g"),this.biopic));
 
 
     }
