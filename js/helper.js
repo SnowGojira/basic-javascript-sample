@@ -16,14 +16,14 @@ var HTMLheaderName = '<h1 class="text-thin">%data%</h1>';
 var HTMLheaderRole = '<h4 class="text-thick">%data%</h4>';
 var HTMLbioPic = '<img class="img-fluid" src="%data%'+'_xs.jpg" srcset="%data%'+'_xs.jpg 450w, %data%'+'_xm.jpg 700w, %data%'+'_xl.jpg 900w" sizes="100vw" alt="photo"/>';
 
-var HTMLwelcomeMsg = '<p class="bio">%data%</p><div id="contact"></div>';
+var HTMLwelcomeMsg = '<p class="bio">%data%</p><h3 class="text-mute text-thick text-uppercase skill_title">Contect me</h3><div id="contact"></div>';
 var HTMLskillsStart = '<h3 class="text-mute text-thick text-uppercase skill_title">Skills at  glance</h3><p id="bio_skills" class="bio_skill">';
 var HTMLskills = '<span class="skill_item">%data%</span>';
 
-var HTMLmobile = '<h6 class="contact_item"><span class="iconfont">&#xe612;</span>%data%</h6>';
-var HTMLemail = '<h6 class="contact_item"><span class="iconfont">&#xe663;</span>%data%</h6>';
-var HTMLgithub = '<h6 class="contact_item"><span class="iconfont">&#xe6a4;</span>%data%</h6>';
-var HTMLlocation = '<h6 class="contact_item"><span class="iconfont">&#xe80b;</span>%data%</h6>';
+var HTMLmobile = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
+var HTMLemail = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
+var HTMLgithub = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
+var HTMLlocation = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
 
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
