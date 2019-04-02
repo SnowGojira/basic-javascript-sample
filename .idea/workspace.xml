@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4144e8-c9b9-4fee-a67f-8f0abef1fa05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/images/iconfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/iconfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/images/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/images/iconfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/iconfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/images/iconfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/helper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/resumeBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/resumeBuilder.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,30 +33,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
+          <entry key="css" value="2" />
           <entry key="html" value="1" />
           <entry key="js" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
+          <entry key="CSS" value="2" />
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="140" />
-          <entry key="html" value="593" />
-          <entry key="js" value="2201" />
+          <entry key="css" value="312" />
+          <entry key="html" value="601" />
+          <entry key="js" value="2420" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="140" />
-          <entry key="HTML" value="593" />
-          <entry key="JavaScript" value="2201" />
+          <entry key="CSS" value="312" />
+          <entry key="HTML" value="601" />
+          <entry key="JavaScript" value="2420" />
         </counts>
       </usages-collector>
     </session>
@@ -57,26 +66,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="132" column="9" lean-forward="true" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
+            <state relative-caret-position="390">
+              <caret line="35" column="20" selection-start-line="35" selection-start-column="16" selection-end-line="40" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="236" column="4" selection-start-line="236" selection-start-column="4" selection-end-line="236" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/resumeBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+            <state relative-caret-position="468">
+              <caret line="38" column="78" selection-start-line="38" selection-start-column="78" selection-end-line="38" selection-end-column="78" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -87,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="78">
+              <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -103,6 +112,11 @@
       <find>skill</find>
       <find>work</find>
       <find>upper</find>
+      <find>contact</find>
+      <find>h6</find>
+      <find>emal</find>
+      <find>id=</find>
+      <find>iconfont</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,10 +125,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/helper.js" />
+        <option value="$PROJECT_DIR$/../download/font_7ujqj1rgc6j/iconfont.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/resumeBuilder.js" />
+        <option value="$PROJECT_DIR$/js/helper.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -151,6 +166,11 @@
             <path>
               <item name="project-four" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-four" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-four" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-four" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -171,6 +191,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hakuh\Desktop\project-four\images" />
       <recent name="C:\Users\hakuh\Desktop\project-four" />
     </key>
   </component>
@@ -197,12 +218,12 @@
       <option name="presentableId" value="Default" />
       <updated>1553959373930</updated>
       <workItem from="1553959377155" duration="690000" />
-      <workItem from="1554040271810" duration="14744000" />
+      <workItem from="1554040271810" duration="17660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15434000" />
+    <option name="totallyTimeSpent" value="18350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -226,6 +247,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12095175" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -243,34 +283,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../download/font_7ujqj1rgc6j/iconfont.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/resumeBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="38" column="78" selection-start-line="38" selection-start-column="78" selection-end-line="38" selection-end-column="78" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="78">
+          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        <state relative-caret-position="390">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="16" selection-end-line="40" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="132" column="9" lean-forward="true" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/resumeBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="169">
+          <caret line="236" column="4" selection-start-line="236" selection-start-column="4" selection-end-line="236" selection-end-column="4" />
         </state>
       </provider>
     </entry>

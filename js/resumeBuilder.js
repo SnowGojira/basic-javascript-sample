@@ -10,8 +10,8 @@ var bio = {
     role : "FRONT-END NINJA",
     contacts : {
         mobile : "181-1129-1995",
-        email : "hakuhal@assemblemedia.cn",
-        github : "https://github.com/SirSnow",
+        email : "hakuhal@qq.com",
+        github : "SnowSir@github.com",
         location : "ChengDu"
     },
     welcomeMessage : "My name means snow, so I made a website with such a theme.Although I am a girl, I hope I can make some achievements in the field of programming, break the stereotype, and make my own contribution to the equality of men and women.",
@@ -30,17 +30,18 @@ var bio = {
         bio_intro.append(HTMLwelcomeMsg.replace("%data%",this.welcomeMessage));
         // bio_intro.append(HTMLskillsStart);
         bio_intro.append(HTMLskillsStart);
-        
+
+        /*display all the contact path*/
+        var contact = $("#contact");
+        contact.append(HTMLmobile.replace("%data%",this.contacts.mobile));
+        contact.append(HTMLemail.replace("%data%",this.contacts.email));
+        contact.append(HTMLgithub.replace("%data%",this.contacts.github));
+        contact.append(HTMLlocation.replace("%data%",this.contacts.location));
+
         /*display all the skills*/
-        var bio_skills = $("#bio_skills");
         for (skill in this.skills){
-            bio_skills.append(HTMLskills.replace("%data%",this.skills[skill])+" ");
+            $("#bio_skills").append(HTMLskills.replace("%data%",this.skills[skill])+" ");
         }
-
-
-
-
-
 
 
 
