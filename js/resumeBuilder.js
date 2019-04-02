@@ -4,7 +4,6 @@ Create the json object will be used
 var bio_name = $("#bio_name");
 var bio_photo = $("#bio_photo");
 var bio_intro = $("#bio_intro");
-var bio_skills = $("#bio_skills");
 
 var bio = {
     name : "HAKU HAL",
@@ -30,14 +29,12 @@ var bio = {
         /*display the details of self-introduce*/
         bio_intro.append(HTMLwelcomeMsg.replace("%data%",this.welcomeMessage));
         // bio_intro.append(HTMLskillsStart);
-
+        bio_intro.append(HTMLskillsStart);
+        
         /*display all the skills*/
-        /*TODO need to find out a way to add the span dynamic*/
-        var skills = this.skills;
-        console.log(skills);
-        for (skill in skills){
-            bio_intro.append(HTMLskillsStart);
-            bio_skills.append(HTMLskills.replace("%data%",skills[skill])+" ");
+        var bio_skills = $("#bio_skills");
+        for (skill in this.skills){
+            bio_skills.append(HTMLskills.replace("%data%",this.skills[skill])+" ");
         }
 
 
