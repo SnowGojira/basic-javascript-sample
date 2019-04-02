@@ -193,8 +193,8 @@ footer {
 }
 
 section.timeline-outer {
-    width: 90%;
-    margin: -36px auto 0 8rem;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 
@@ -247,7 +247,6 @@ section.timeline-outer {
     content: attr(data-date);
     text-align: right;
     /*  font-weight: 100;*/
-
     font-size: 16px;
     min-width: 120px;
 }
@@ -332,6 +331,7 @@ Responsive Stuff
         max-width: 50%;
         margin: 0 auto;
     }
+
     #logo {
         width: 64px;
         height: 64px;
@@ -352,6 +352,11 @@ Responsive Stuff
 
     .bio {
         font-size: 0.8rem;
+    }
+
+    /*timeline*/
+    section.timeline-outer {
+        max-width: 100%;
     }
 }
 @media (min-width: 801px) {
@@ -393,5 +398,11 @@ Responsive Stuff
 
     .bio {
         font-size: 0.9rem;
+    }
+
+    /*timeline*/
+    section.timeline-outer {
+        width: 90%;
+        margin: -2rem 0 0 7.25rem;
     }
 }
