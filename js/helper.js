@@ -29,6 +29,7 @@ var HTMLschoolStart = '<div class="container content" ><div class="row"><div cla
 var HTMLworkStart = '<div class="container content" ><div class="row"><div class="col s12 m12 l12"><ul class="timeline" id="work_entry" ></ul></div></div></div>';
 var HTMLschoolItem = '<li class="event" data-date="%date%"><h3>%name%---%degree%</h3><p><span class="iconfont">&#xe80b;</span> %location%</p><p>Major: %major%</p></li>';
 var HTMLCourseItem = '<li class="event" data-date="%date%"><h3>%course%--%school%</h3><p>%url%</p></li>';
+var HTMLWorkItem = '<li class="event" data-date="%date%"><h3>%title%---%employer%</h3><p><span class="iconfont">&#xe80b;</span> %location%</p><p>%descr%</p></li>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 

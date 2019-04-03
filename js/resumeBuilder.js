@@ -149,6 +149,17 @@ var work = {
     ],
     display : function () {
         $('#work_timeline').append(HTMLworkStart);
+        for (job in this.jobs){
+            var jobObj = this.jobs[job];
+            var employer, title, location, dates, descr;
+            employer = jobObj.employer;
+            title = jobObj.title;
+            dates = jobObj.dates;
+            location = jobObj.location;
+            descr = jobObj.description;
+
+            $('#work_entry').append(HTMLWorkItem.replace("%date%",dates).replace("%title%",title).replace("%location%",location).replace("%employer%",employer).replace("%descr%",descr));
+        }
 
     }
 };
