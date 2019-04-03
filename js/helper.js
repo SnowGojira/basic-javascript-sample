@@ -25,6 +25,13 @@ var HTMLemail = '<h6 class="contact_item"><span class="skill_item">%data%</span>
 var HTMLgithub = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
 var HTMLlocation = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
 
+var HTMLschoolStart = '<div class="container content"><div class="row"><div class="col s12 m12 l12"><ul class="timeline" id="edu_uni" ></ul><div class="col-md-12"><h3 class="text-thick">Online Courses</h3></div><ul class="timeline" id="edu_online"></ul></div></div></div>';
+var HTMLschoolItem = '<li class="event" data-date="2015/Present"><h3></h3><p></p></li>';
+var HTMLschoolDates = '<li class="event" data-date="%data%" id="school"></li>';
+var HTMLschoolTitle = '<h3>%data1%---%data2%</h3>';
+// var HTMLschoolDegree = '---%data%</h3>';
+var HTMLschoolLocation = '<p><span class="iconfont">&#xe80b;</span> Osaka</p>';
+var HTMLschoolMajor = '<p>Major:%data%</em>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 
@@ -44,12 +51,7 @@ var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<a href="#">%data%';

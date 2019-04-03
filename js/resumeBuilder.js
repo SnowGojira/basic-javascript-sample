@@ -51,12 +51,19 @@ var bio = {
 bio.display();
 
 var education = {
-    school : [
+    schools : [
+        {
+            name : "DLUT",
+            location : "Dalian",
+            degree : "Bachelor",
+            majors : ["Electron Physics Engineer in Semiconductor field","Japanese Literature"],
+            dates : "2006-2010"
+        },
         {
             name : "Osaka University",
             location : "Osaka",
             degree : "Master",
-            majors : ["Physics","Japanese"],
+            majors : ["Material Physics Engineer in Electronic Structure of Heavy Metals' field"],
             dates : "2010-2013"
          }
     ],
@@ -75,10 +82,43 @@ var education = {
         }
     ],
     display : function () {
-        
+        $("#edu_timeline").append(HTMLschoolStart);
+
+        /*display university education*/
+        var edu_uni = $("#edu_uni");
+        for(school in this.schools){
+
+            var date = this.schools[school].dates;
+            var name = this.schools[school].name;
+            var degree = this.schools[school].degree;
+            var location = this.schools[school].location;
+
+            //print out all the majors
+            var major = "";
+            var majorArr = this.schools[school].majors;
+            majorArr.forEach(function (item, index) {
+                if(index < majorArr.length-1){
+                    major += item+" && ";
+                }else{
+                    major += item;
+                }
+            });
+
+            console.log(date+" "+name+" "+degree+" "+location);
+            console.log(major);
+            
+            edu_uni.append(HTMLschoolDates.replace("%data%",date));
+            var edu_school = $("#school");
+            var school_title = HTMLschoolTitle.replace("%data1%",name).replace("%data2%",degree);
+            edu_school.append(school_title);
+
+        }
+
+        /*display online education*/
     }
 
 };
+education.display();
 
 var work = {
     jobs : [
@@ -116,3 +156,7 @@ var projects = {
 };
 
 
+function Append(dom,HTML,item) {
+    var str = HTML;
+    dom.append(str.replace("%data%",item));
+}

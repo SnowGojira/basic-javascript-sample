@@ -188,9 +188,6 @@ footer {
 
 
 /*add a timeline style*/
-#content {
-    text-align: center;
-}
 
 section.timeline-outer {
     max-width: 90%;
@@ -205,7 +202,6 @@ section.timeline-outer {
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    /*color: #000;*/
     margin: 50px auto;
     letter-spacing: 0.5px;
     position: relative;
