@@ -104,13 +104,14 @@ var education = {
                 }
             });
 
+            /*display a li item*/
             console.log(date+" "+name+" "+degree+" "+location);
             console.log(major);
-            
-            edu_uni.append(HTMLschoolDates.replace("%data%",date));
-            var edu_school = $("#school");
-            var school_title = HTMLschoolTitle.replace("%data1%",name).replace("%data2%",degree);
-            edu_school.append(school_title);
+
+            edu_uni.append(HTMLschoolItem.replace("%date%",date).replace("%name%",name).replace("%degree%",degree).replace("%location%",location).replace("%major%",major));
+            // var edu_school = $("#school");
+            // var school_title = HTMLschoolTitle.replace("%data1%",name).replace("%data2%",degree);
+            // edu_school.append(school_title);
 
         }
 

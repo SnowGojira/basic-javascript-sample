@@ -25,13 +25,9 @@ var HTMLemail = '<h6 class="contact_item"><span class="skill_item">%data%</span>
 var HTMLgithub = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
 var HTMLlocation = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
 
-var HTMLschoolStart = '<div class="container content"><div class="row"><div class="col s12 m12 l12"><ul class="timeline" id="edu_uni" ></ul><div class="col-md-12"><h3 class="text-thick">Online Courses</h3></div><ul class="timeline" id="edu_online"></ul></div></div></div>';
-var HTMLschoolItem = '<li class="event" data-date="2015/Present"><h3></h3><p></p></li>';
-var HTMLschoolDates = '<li class="event" data-date="%data%" id="school"></li>';
-var HTMLschoolTitle = '<h3>%data1%---%data2%</h3>';
-// var HTMLschoolDegree = '---%data%</h3>';
-var HTMLschoolLocation = '<p><span class="iconfont">&#xe80b;</span> Osaka</p>';
-var HTMLschoolMajor = '<p>Major:%data%</em>';
+var HTMLschoolStart = '<div class="container content" ><div class="row"><div class="col s12 m12 l12"><ul class="timeline" id="edu_uni" ></ul><div class="col-md-12"><h3 class="text-thick">Online Courses</h3></div><ul class="timeline" id="edu_online"></ul></div></div></div>';
+var HTMLschoolItem = '<li class="event" data-date="%date%"><h3>%name%---%degree%</h3><p><span class="iconfont">&#xe80b;</span> %location%</p><p>Major: %major%</p></li>';
+var HTMLCourseItem = '';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 
