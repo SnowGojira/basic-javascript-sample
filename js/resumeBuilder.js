@@ -168,17 +168,75 @@ work.display();
 var projects = {
     projects : [
         {
-            title : "",
-            dates : "",
-            description : "",
-            images : [""]
+            title : "Snow One",
+            dates : "2018-5-7",
+            description : "This is a test text, which has no practical significance. It mainly used to occupy space.",
+            /*because of the style changes, make some changes in json*/
+            images : "images/1-480_xm.jpg"
+        },
+        {
+            title : "Snow Two",
+            dates : "2018-6-7",
+            description : "This is a test text, which has no practical significance. It mainly used to occupy space.",
+            /*because of the style changes, make some changes in json*/
+            images : "images/2-480_xm.jpg"
+        },
+        {
+            title : "Snow Three",
+            dates : "2018-7-7",
+            description : "This is a test text, which has no practical significance. It mainly used to occupy space.",
+            /*because of the style changes, make some changes in json*/
+            images : "images/3-480_xm.jpg"
+        },
+        {
+            title : "Snow Four",
+            dates : "2018-8-7",
+            description : "This is a test text, which has no practical significance. It mainly used to occupy space.",
+            /*because of the style changes, make some changes in json*/
+            images : "images/4-480_xm.jpg"
+        },
+        {
+            title : "Snow Five",
+            dates : "2018-9-7",
+            description : "This is a test text, which has no practical significance. It mainly used to occupy space.",
+            /*because of the style changes, make some changes in json*/
+            images : "images/5-480_xm.jpg"
+        },
+        {
+            title : "Snow Six",
+            dates : "2018-10-7",
+            description : "This is a test text, which has no practical significance. It mainly used to occupy space.",
+            /*because of the style changes, make some changes in json*/
+            images : "images/6-480_xm.jpg"
+        },
+        {
+            title : "Snow Seven",
+            dates : "2018-11-7",
+            description : "This is a test text, which has no practical significance. It mainly used to occupy space.",
+            /*because of the style changes, make some changes in json*/
+            images : "images/7-480_xm.jpg"
+        },
+        {
+            title : "Snow Eight",
+            dates : "2018-12-7",
+            description : "This is a test text, which has no practical significance. It mainly used to occupy space.",
+            /*because of the style changes, make some changes in json*/
+            images : "images/8-480_xm.jpg"
         }
     ],
     display : function () {
+        for (item in this.projects){
+            var img = this.projects[item].images;
+            var title = this.projects[item].title;
+            var date = this.projects[item].dates;
+            var descr = this.projects[item].description;
+            $("#projects").append(HTMLProjectItem.replace("%image%",img).replace("%title%",title).replace("%date%",date).replace("%descr%",descr));
+        }
 
     }
-
 };
+
+projects.display();
 
 
 function Append(dom,HTML,item) {

@@ -135,6 +135,38 @@ a:hover {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
+.card {
+    text-align: justify;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin: 0 auto 1.5rem auto;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card_detail {
+    padding: 15px;
+}
+
+.card h5 {
+    text-align: left;
+    font-family: Arial,sans-serif;
+}
+
+.card_title {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.c_title {
+    width: 50%;
+}
+.c_date {
+    text-align: right;
+    margin-top: 15px;
+}
+
 .skill_title {
     font-size: 0.9rem;
 }
@@ -157,7 +189,6 @@ a:hover {
 .contact_item {
     width: 100%;
 }
-
 
 h6,
 .iconfont {
