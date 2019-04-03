@@ -26,15 +26,15 @@ var HTMLgithub = '<h6 class="contact_item"><span class="skill_item">%data%</span
 var HTMLlocation = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
 
 var HTMLschoolStart = '<div class="container content" ><div class="row"><div class="col s12 m12 l12"><ul class="timeline" id="edu_uni" ></ul><div class="col-md-12"><h3 class="text-thick">Online Courses</h3></div><ul class="timeline" id="edu_online"></ul></div></div></div>';
+var HTMLworkStart = '<div class="container content" ><div class="row"><div class="col s12 m12 l12"><ul class="timeline" id="work_entry" ></ul></div></div></div>';
 var HTMLschoolItem = '<li class="event" data-date="%date%"><h3>%name%---%degree%</h3><p><span class="iconfont">&#xe80b;</span> %location%</p><p>Major: %major%</p></li>';
-var HTMLCourseItem = '';
+var HTMLCourseItem = '<li class="event" data-date="%date%"><h3>%course%--%school%</h3><p>%url%</p></li>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 
 
 
 
-var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';

@@ -76,23 +76,22 @@ var education = {
         },
         {
             title : "Vue Workshop",
-            school : "frontend Master",
+            school : "Frontend Master",
             dates : "2018-2019",
             url : "https://frontendmasters.com/"
         }
     ],
     display : function () {
+
         $("#edu_timeline").append(HTMLschoolStart);
 
         /*display university education*/
         var edu_uni = $("#edu_uni");
         for(school in this.schools){
-
             var date = this.schools[school].dates;
             var name = this.schools[school].name;
             var degree = this.schools[school].degree;
             var location = this.schools[school].location;
-
             //print out all the majors
             var major = "";
             var majorArr = this.schools[school].majors;
@@ -103,21 +102,24 @@ var education = {
                     major += item;
                 }
             });
-
             /*display a li item*/
-            console.log(date+" "+name+" "+degree+" "+location);
-            console.log(major);
-
             edu_uni.append(HTMLschoolItem.replace("%date%",date).replace("%name%",name).replace("%degree%",degree).replace("%location%",location).replace("%major%",major));
-            // var edu_school = $("#school");
-            // var school_title = HTMLschoolTitle.replace("%data1%",name).replace("%data2%",degree);
-            // edu_school.append(school_title);
-
         }
 
         /*display online education*/
-    }
+        var edu_online = $("#edu_online");
+        for (course in this.onlineCourses){
+            var title,platform,dates,url,onlineCourseObj;
+            onlineCourseObj = this.onlineCourses[course];
+            title = onlineCourseObj.title;
+            platform = onlineCourseObj.school;
+            dates = onlineCourseObj.dates;
+            url = onlineCourseObj.url;
 
+            /*add li item*/
+            edu_online.append(HTMLCourseItem.replace("%url%",url).replace("%date%",dates).replace("%course%",title).replace("%school%",platform));
+        }
+    }
 };
 education.display();
 
@@ -127,20 +129,31 @@ var work = {
             employer : "IBM",
             title : "Software Procurement Agent",
             location : "ChengDu",
-            dates : "2013-2015",
+            dates : "2013.10-2015.5",
             description : "Engaged in software procurement business to Japanese Customers. Mainly responsible for the daily software purchases to Japanese customers, partial business assignment to the customers in Europe or Hong Kong. At the same time, analyse statistical data on procurement, optimize quotation processes, and sort the supplier's list."
         },
-
         {
-            employer: "ChengDu Kaiqiang Culture Company",
+            employer: "MirrorGeo Vr Company",
+            title: "Android development",
+            location: "ChengDu",
+            dates: "2015.9-2015.5",
+            description: "Responsible for programming the Android app. The main use of APP is a 3D instruction. You can rotate a VR model at the phone and observe the details of its every angel."
+        },
+        {
+            employer: "Kaiqiang Culture Company",
             title: "Technical partner",
             location: "ChengDu",
-            dates: "2017-2019",
-            description: "Charged for all the company's technical operations"
+            dates: "2016.8-2019.3",
+            description: "Charged for all the company's technical operations and consultation."
         }
-    ]
+    ],
+    display : function () {
+        $('#work_timeline').append(HTMLworkStart);
+
+    }
 };
 
+work.display();
 var projects = {
     projects : [
         {
