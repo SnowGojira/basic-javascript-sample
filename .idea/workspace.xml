@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4144e8-c9b9-4fee-a67f-8f0abef1fa05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/helper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/resumeBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/resumeBuilder.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,30 +41,29 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="783" />
-          <entry key="html" value="1301" />
-          <entry key="js" value="5650" />
+          <entry key="html" value="1303" />
+          <entry key="js" value="5652" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="783" />
-          <entry key="HTML" value="1301" />
-          <entry key="JavaScript" value="5650" />
+          <entry key="HTML" value="1303" />
+          <entry key="JavaScript" value="5652" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+            <state relative-caret-position="39">
+              <caret line="86" column="71" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
               <folding>
                 <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#8596#8955#0" />
               </folding>
             </state>
           </provider>
@@ -77,13 +78,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/resumeBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="98" column="18" selection-start-line="98" selection-start-column="16" selection-end-line="102" selection-end-column="19" />
+            <state relative-caret-position="462">
+              <caret line="228" selection-start-line="228" selection-end-line="228" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="n#!!block;n#initMap#0" />
               </folding>
             </state>
           </provider>
@@ -93,8 +95,9 @@
         <entry file="file://$PROJECT_DIR$/js/helper.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="39">
-              <caret line="113" column="6" lean-forward="true" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
+                <element signature="e#4252#8660#0" />
                 <element signature="e#7007#7156#0" />
               </folding>
             </state>
@@ -132,9 +135,9 @@
       <find>h3</find>
       <find>img</find>
       <find>id=</find>
-      <find>addEventListener</find>
-      <find>card</find>
       <find>this.schools[school]</find>
+      <find>card</find>
+      <find>addEventListener</find>
     </findStrings>
     <replaceStrings>
       <replace>item</replace>
@@ -148,10 +151,10 @@
       <list>
         <option value="$PROJECT_DIR$/../download/font_7ujqj1rgc6j/iconfont.css" />
         <option value="$PROJECT_DIR$/../chapter-four/frontend-nanodegree-resume/index.html" />
-        <option value="$PROJECT_DIR$/js/helper.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/helper.js" />
         <option value="$PROJECT_DIR$/js/resumeBuilder.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -240,12 +243,12 @@
       <option name="presentableId" value="Default" />
       <updated>1553959373930</updated>
       <workItem from="1553959377155" duration="690000" />
-      <workItem from="1554040271810" duration="42310000" />
+      <workItem from="1554040271810" duration="42550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43000000" />
+    <option name="totallyTimeSpent" value="43240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -308,6 +311,13 @@
     <entry file="file://$PROJECT_DIR$/../download/font_7ujqj1rgc6j/iconfont.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="216" column="1" lean-forward="true" selection-start-line="216" selection-start-column="1" selection-end-line="216" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../chapter-four/frontend-nanodegree-resume/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -318,38 +328,32 @@
     <entry file="file://$PROJECT_DIR$/js/helper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
-          <caret line="113" column="6" lean-forward="true" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
+            <element signature="e#4252#8660#0" />
             <element signature="e#7007#7156#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/resumeBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="228" selection-start-line="228" selection-end-line="228" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#initMap#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+        <state relative-caret-position="39">
+          <caret line="86" column="71" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
           <folding>
             <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#8596#8955#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="216" column="1" lean-forward="true" selection-start-line="216" selection-start-column="1" selection-end-line="216" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/resumeBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="98" column="18" selection-start-line="98" selection-start-column="16" selection-end-line="102" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

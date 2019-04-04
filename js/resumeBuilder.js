@@ -227,10 +227,14 @@ var projects = {
 
 projects.display();
 
-/**/
-
-
-function Append(dom,HTML,item) {
-    var str = HTML;
-    dom.append(str.replace("%data%",item));
+// Initialize and add the map
+function initMap() {
+    // The location of Uluru
+    var chengdu = {lat: 30.67, lng: 104.06};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 10, center: chengdu});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: chengdu, map: map});
 }
+

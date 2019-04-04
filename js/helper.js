@@ -7,7 +7,6 @@ Don't worry, you'll learn what's going on in this file throughout the course. Yo
 Cameron Pittman
 */
 
-
 /*
 These are HTML strings. As part of the course, you'll be using JavaScript functions
 replace the %data% placeholder text you see in them.
@@ -32,8 +31,6 @@ var HTMLCourseItem = '<li class="event" data-date="%date%"><h3>%course%--%school
 var HTMLWorkItem = '<li class="event" data-date="%date%"><h3>%title%---%employer%</h3><p><span class="iconfont">&#xe80b;</span> %location%</p><p>%descr%</p></li>';
 var HTMLProjectItem = '<div class="col-md-4"><div class="card"><img class="img-fluid" src="%image%"  alt="snap"/><div class="card_detail"><div class="card_title"><h5 class="text-thick c_title">%title%</h5><p class="c_title c_date">%date%</p></div><p>%descr%</p></div></div></div>';
 
-var googleMap = '<div id="map"></div>';
-
 
 /*
 The Internationalize Names challenge found in the lesson Flow Control from JavaScript Basics requires you to create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
@@ -45,26 +42,6 @@ $(document).ready(function() {
     $name.html(iName);
   });
 });
-
-/*
-The next few lines about clicks are for the Collecting Click Locations quiz in the lesson Flow Control from JavaScript Basics.
-*/
-var clickLocations = [];
-
-function logClicks(x,y) {
-  clickLocations.push(
-    {
-      x: x,
-      y: y
-    }
-  );
-  console.log('x location: ' + x + '; y location: ' + y);
-}
-
-$(document).click(function(loc) {
-  // your code goes here!
-});
-
 
 
 /*
