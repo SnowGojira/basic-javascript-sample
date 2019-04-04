@@ -39,9 +39,13 @@ var bio = {
         contact.append(HTMLlocation.replace("%data%",this.contacts.location));
 
         /*display all the skills*/
-        for (skill in this.skills){
+        var skills = this.skills;
+        skills.forEach(function (item) {
+            $("#bio_skills").append(HTMLskills.replace("%data%",item)+" ");
+        });
+        /*for (skill in this.skills){
             $("#bio_skills").append(HTMLskills.replace("%data%",this.skills[skill])+" ");
-        }
+        }*/
 
 
 
