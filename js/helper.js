@@ -32,33 +32,6 @@ var HTMLCourseItem = '<li class="event" data-date="%date%"><h3>%course%--%school
 var HTMLWorkItem = '<li class="event" data-date="%date%"><h3>%title%---%employer%</h3><p><span class="iconfont">&#xe80b;</span> %location%</p><p>%descr%</p></li>';
 var HTMLProjectItem = '<div class="col-md-4"><div class="card"><img class="img-fluid" src="%image%"  alt="snap"/><div class="card_detail"><div class="card_title"><h5 class="text-thick c_title">%title%</h5><p class="c_title c_date">%date%</p></div><p>%descr%</p></div></div></div>';
 
-
-var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-
-
-
-
-var HTMLworkEmployer = '<a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a>';
-var HTMLworkDates = '<div class="date-text">%data%</div>';
-var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescription = '<p><br>%data%</p>';
-
-var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
-
-
-
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
-
-var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
 
@@ -156,51 +129,51 @@ function initializeMap() {
   placeData is the object returned from search results containing information
   about a single location.
   */
-  function createMapMarker(placeData) {
-
-    // The next lines save location data from the search result object to local variables
-    var lat = placeData.geometry.location.lat();  // latitude from the place service
-    var lon = placeData.geometry.location.lng();  // longitude from the place service
-    var name = placeData.formatted_address;   // name of the place from the place service
-    var bounds = window.mapBounds;            // current boundaries of the map window
-
-    // marker is an object with additional data about the pin for a single location
-    var marker = new google.maps.Marker({
-      map: map,
-      position: placeData.geometry.location,
-      title: name
-    });
-
-    // infoWindows are the little helper windows that open when you click
-    // or hover over a pin on a map. They usually contain more information
-    // about a location.
-    var infoWindow = new google.maps.InfoWindow({
-      content: name
-    });
-
-    // hmmmm, I wonder what this is about...
-    google.maps.event.addListener(marker, 'click', function() {
-      // your code goes here!
-    });
-
-    // this is where the pin actually gets added to the map.
-    // bounds.extend() takes in a map location object
-    bounds.extend(new google.maps.LatLng(lat, lon));
-    // fit the map to the new marker
-    map.fitBounds(bounds);
-    // center the map
-    map.setCenter(bounds.getCenter());
-  }
+  // function createMapMarker(placeData) {
+  //
+  //   // The next lines save location data from the search result object to local variables
+  //   var lat = placeData.geometry.location.lat();  // latitude from the place service
+  //   var lon = placeData.geometry.location.lng();  // longitude from the place service
+  //   var name = placeData.formatted_address;   // name of the place from the place service
+  //   var bounds = window.mapBounds;            // current boundaries of the map window
+  //
+  //   // marker is an object with additional data about the pin for a single location
+  //   var marker = new google.maps.Marker({
+  //     map: map,
+  //     position: placeData.geometry.location,
+  //     title: name
+  //   });
+  //
+  //   // infoWindows are the little helper windows that open when you click
+  //   // or hover over a pin on a map. They usually contain more information
+  //   // about a location.
+  //   var infoWindow = new google.maps.InfoWindow({
+  //     content: name
+  //   });
+  //
+  //   // hmmmm, I wonder what this is about...
+  //   google.maps.event.addListener(marker, 'click', function() {
+  //     // your code goes here!
+  //   });
+  //
+  //   // this is where the pin actually gets added to the map.
+  //   // bounds.extend() takes in a map location object
+  //   bounds.extend(new google.maps.LatLng(lat, lon));
+  //   // fit the map to the new marker
+  //   map.fitBounds(bounds);
+  //   // center the map
+  //   map.setCenter(bounds.getCenter());
+  // }
 
   /*
   callback(results, status) makes sure the search returned results for a location.
   If so, it creates a new map marker for that location.
   */
-  function callback(results, status) {
+ /* function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
       createMapMarker(results[0]);
     }
-  }
+  }*/
 
   /*
   pinPoster(locations) takes in the array of locations created by locationFinder()
@@ -242,7 +215,7 @@ Uncomment the code below when you're ready to implement a Google Map!
 */
 
 // Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
+// window.addEventListener('load', initializeMap);
 
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds

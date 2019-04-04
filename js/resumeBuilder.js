@@ -238,6 +238,8 @@ var projects = {
 
 projects.display();
 
+// $("#map").append(googleMap);
+
 
 function Append(dom,HTML,item) {
     var str = HTML;

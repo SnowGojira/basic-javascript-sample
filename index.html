@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDpezUzGDGLeuMUDfmbNEyEXz7Ab_qXEFs"></script>-->
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpezUzGDGLeuMUDfmbNEyEXz7Ab_qXEFs&callback=initMap"-->
+            <!--type="text/javascript"></script>-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>full responsive resume</title>
     <meta name="description" content="">
@@ -66,6 +69,11 @@
             </div>
         </div>
 
+        <div class="row work">
+            <div class="col-md-12" id="map">
+            </div>
+        </div>
+
 
         <div class="row">
             <div class="col-md-12">
@@ -86,4 +94,24 @@
 <script src="js/jQuery.js"></script>
 <script src="js/helper.js"></script>
 <script src="js/resumeBuilder.js"></script>
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var chengdu = {lat: 30.67, lng: 104.06};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 10, center: chengdu});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: chengdu, map: map});
+    }
+</script>
+<!--Load the API from the specified URL
+* The async attribute allows the browser to render the page while the API loads
+* The key parameter will contain your own API key (which is not needed for this tutorial)
+* The callback parameter executes the initMap() function
+-->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpezUzGDGLeuMUDfmbNEyEXz7Ab_qXEFs&callback=initMap">
+</script>
 </html>
