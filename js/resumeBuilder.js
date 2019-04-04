@@ -95,11 +95,7 @@ var education = {
             var major = "";
             var majorArr = item.majors;
             majorArr.forEach(function (item, index) {
-                if(index < majorArr.length-1){
-                    major += item+" && ";
-                }else{
-                    major += item;
-                }
+                index < majorArr.length-1? major += item+" && " : major += item;
             });
             /*display a li item*/
             edu_uni.append(HTMLschoolItem.replace("%date%",date).replace("%name%",name).replace("%degree%",degree).replace("%location%",location).replace("%major%",major));
