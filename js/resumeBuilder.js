@@ -43,12 +43,6 @@ var bio = {
         skills.forEach(function (item) {
             $("#bio_skills").append(HTMLskills.replace("%data%",item)+" ");
         });
-        /*for (skill in this.skills){
-            $("#bio_skills").append(HTMLskills.replace("%data%",this.skills[skill])+" ");
-        }*/
-
-
-
     }
 };
 
@@ -90,15 +84,16 @@ var education = {
         $("#edu_timeline").append(HTMLschoolStart);
 
         /*display university education*/
+        var schools = this.schools;
         var edu_uni = $("#edu_uni");
-        for(school in this.schools){
-            var date = this.schools[school].dates;
-            var name = this.schools[school].name;
-            var degree = this.schools[school].degree;
-            var location = this.schools[school].location;
+        schools.forEach(function (item) {
+            var date = item.dates;
+            var name = item.name;
+            var degree = item.degree;
+            var location = item.location;
             //print out all the majors
             var major = "";
-            var majorArr = this.schools[school].majors;
+            var majorArr = item.majors;
             majorArr.forEach(function (item, index) {
                 if(index < majorArr.length-1){
                     major += item+" && ";
@@ -108,21 +103,21 @@ var education = {
             });
             /*display a li item*/
             edu_uni.append(HTMLschoolItem.replace("%date%",date).replace("%name%",name).replace("%degree%",degree).replace("%location%",location).replace("%major%",major));
-        }
+        });
 
         /*display online education*/
         var edu_online = $("#edu_online");
-        for (course in this.onlineCourses){
+        var onlineCourse = this.onlineCourses;
+        onlineCourse.forEach(function (item) {
             var title,platform,dates,url,onlineCourseObj;
-            onlineCourseObj = this.onlineCourses[course];
-            title = onlineCourseObj.title;
-            platform = onlineCourseObj.school;
-            dates = onlineCourseObj.dates;
-            url = onlineCourseObj.url;
+            title = item.title;
+            platform = item.school;
+            dates = item.dates;
+            url = item.url;
 
             /*add li item*/
             edu_online.append(HTMLCourseItem.replace("%url%",url).replace("%date%",dates).replace("%course%",title).replace("%school%",platform));
-        }
+        });
     }
 };
 education.display();
