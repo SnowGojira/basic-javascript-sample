@@ -2,11 +2,11 @@
 Create the json object will be used
  */
 $(function () {
-    var bio_name = $("#bio_name");
-    var bio_photo = $("#bio_photo");
-    var bio_intro = $("#bio_intro");
+    let bio_name = $("#bio_name");
+    let bio_photo = $("#bio_photo");
+    let bio_intro = $("#bio_intro");
 
-    var bio = {
+    let bio = {
         name : "HAKU HAL",
         role : "FRONT-END NINJA",
         contacts : {
@@ -33,14 +33,14 @@ $(function () {
             bio_intro.append(HTMLskillsStart);
 
             /*display all the contact path*/
-            var contact = $("#contact");
+            let contact = $("#contact");
             contact.append(HTMLmobile.replace("%data%",this.contacts.mobile));
             contact.append(HTMLemail.replace("%data%",this.contacts.email));
             contact.append(HTMLgithub.replace("%data%",this.contacts.github));
             contact.append(HTMLlocation.replace("%data%",this.contacts.location));
 
             /*display all the skills*/
-            var skills = this.skills;
+            let skills = this.skills;
             skills.forEach(function (item) {
                 $("#bio_skills").append(HTMLskills.replace("%data%",item)+" ");
             });
@@ -49,7 +49,7 @@ $(function () {
 
     bio.display();
 
-    var education = {
+    let education = {
         schools : [
             {
                 name : "DLUT",
@@ -85,16 +85,16 @@ $(function () {
             $("#edu_timeline").append(HTMLschoolStart);
 
             /*display university education*/
-            var schools = this.schools;
-            var edu_uni = $("#edu_uni");
+            let schools = this.schools;
+            let edu_uni = $("#edu_uni");
             schools.forEach(function (item) {
-                var date = item.dates;
-                var name = item.name;
-                var degree = item.degree;
-                var location = item.location;
+                let date = item.dates;
+                let name = item.name;
+                let degree = item.degree;
+                let location = item.location;
                 //print out all the majors
-                var major = "";
-                var majorArr = item.majors;
+                let major = "";
+                let majorArr = item.majors;
                 majorArr.forEach(function (item, index) {
                     index < majorArr.length-1? major += item+" && " : major += item;
                 });
@@ -103,10 +103,10 @@ $(function () {
             });
 
             /*display online education*/
-            var edu_online = $("#edu_online");
-            var onlineCourse = this.onlineCourses;
+            let edu_online = $("#edu_online");
+            let onlineCourse = this.onlineCourses;
             onlineCourse.forEach(function (item) {
-                var title,platform,dates,url,onlineCourseObj;
+                let title,platform,dates,url,onlineCourseObj;
                 title = item.title;
                 platform = item.school;
                 dates = item.dates;
@@ -119,7 +119,7 @@ $(function () {
     };
     education.display();
 
-    var work = {
+    let work = {
         jobs : [
             {
                 employer : "IBM",
@@ -145,9 +145,9 @@ $(function () {
         ],
         display : function () {
             $('#work_timeline').append(HTMLworkStart);
-            var jobs = this.jobs;
+            let jobs = this.jobs;
             jobs.forEach(function (item) {
-                var employer, title, location, dates, descr;
+                let employer, title, location, dates, descr;
                 employer = item.employer;
                 title = item.title;
                 dates = item.dates;
@@ -161,7 +161,7 @@ $(function () {
     };
 
     work.display();
-    var projects = {
+    let projects = {
         projects : [
             {
                 title : "Snow One",
@@ -214,12 +214,12 @@ $(function () {
             }
         ],
         display : function () {
-            var projects = this.projects;
+            let projects = this.projects;
             projects.forEach(function (item) {
-                var img = item.images;
-                var title = item.title;
-                var date = item.dates;
-                var descr = item.description;
+                let img = item.images;
+                let title = item.title;
+                let date = item.dates;
+                let descr = item.description;
                 $("#projects").append(HTMLProjectItem.replace("%image%",img).replace("%title%",title).replace("%date%",date).replace("%descr%",descr));
             });
 
@@ -233,11 +233,11 @@ $(function () {
 // Initialize and add the map
 function initMap() {
     // The location of Uluru
-    var chengdu = {lat: 30.67, lng: 104.06};
+    let chengdu = {lat: 30.67, lng: 104.06};
     // The map, centered at Uluru
-    var map = new google.maps.Map(
+    let map = new google.maps.Map(
         document.getElementById('map'), {zoom: 10, center: chengdu});
     // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({position: chengdu, map: map});
+    let marker = new google.maps.Marker({position: chengdu, map: map});
 }
 

@@ -11,25 +11,25 @@ Cameron Pittman
 These are HTML strings. As part of the course, you'll be using JavaScript functions
 replace the %data% placeholder text you see in them.
 */
-var HTMLheaderName = '<h1 class="text-thin">%data%</h1>';
-var HTMLheaderRole = '<h4 class="text-thick">%data%</h4>';
-var HTMLbioPic = '<img class="img-fluid" src="%data%' + '_xs.jpg" srcset="%data%' + '_xs.jpg 450w, %data%' + '_xm.jpg 700w, %data%' + '_xl.jpg 900w" sizes="100vw" alt="photo"/>';
+const HTMLheaderName = '<h1 class="text-thin">%data%</h1>';
+const HTMLheaderRole = '<h4 class="text-thick">%data%</h4>';
+const HTMLbioPic = '<img class="img-fluid" src="%data%' + '_xs.jpg" srcset="%data%' + '_xs.jpg 450w, %data%' + '_xm.jpg 700w, %data%' + '_xl.jpg 900w" sizes="100vw" alt="photo"/>';
 
-var HTMLwelcomeMsg = '<p class="bio">%data%</p><h3 class="text-mute text-thick text-uppercase skill_title">Contect me</h3><div id="contact"></div>';
-var HTMLskillsStart = '<h3 class="text-mute text-thick text-uppercase skill_title">Skills at  glance</h3><p id="bio_skills" class="bio_skill">';
-var HTMLskills = '<span class="skill_item">%data%</span>';
+const HTMLwelcomeMsg = '<p class="bio">%data%</p><h3 class="text-mute text-thick text-uppercase skill_title">Contect me</h3><div id="contact"></div>';
+const HTMLskillsStart = '<h3 class="text-mute text-thick text-uppercase skill_title">Skills at  glance</h3><p id="bio_skills" class="bio_skill">';
+const HTMLskills = '<span class="skill_item">%data%</span>';
 
-var HTMLmobile = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
-var HTMLemail = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
-var HTMLgithub = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
-var HTMLlocation = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
+const HTMLmobile = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
+const HTMLemail = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
+const HTMLgithub = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
+const HTMLlocation = '<h6 class="contact_item"><span class="skill_item">%data%</span></h6>';
 
-var HTMLschoolStart = '<div class="container content" ><div class="row"><div class="col s12 m12 l12"><ul class="timeline" id="edu_uni" ></ul><div class="col-md-12"><h3 class="text-thick">Online Courses</h3></div><ul class="timeline" id="edu_online"></ul></div></div></div>';
-var HTMLworkStart = '<div class="container content" ><div class="row"><div class="col s12 m12 l12"><ul class="timeline" id="work_entry" ></ul></div></div></div>';
-var HTMLschoolItem = '<li class="event" data-date="%date%"><h3>%name%---%degree%</h3><p><span class="iconfont">&#xe80b;</span> %location%</p><p>Major: %major%</p></li>';
-var HTMLCourseItem = '<li class="event" data-date="%date%"><h3>%course%--%school%</h3><p>%url%</p></li>';
-var HTMLWorkItem = '<li class="event" data-date="%date%"><h3>%title%---%employer%</h3><p><span class="iconfont">&#xe80b;</span> %location%</p><p>%descr%</p></li>';
-var HTMLProjectItem = '<div class="col-md-4"><div class="card"><img class="img-fluid" src="%image%"  alt="snap"/><div class="card_detail"><div class="card_title"><h5 class="text-thick c_title">%title%</h5><p class="c_title c_date">%date%</p></div><p>%descr%</p></div></div></div>';
+const HTMLschoolStart = '<div class="container content" ><div class="row"><div class="col s12 m12 l12"><ul class="timeline" id="edu_uni" ></ul><div class="col-md-12"><h3 class="text-thick">Online Courses</h3></div><ul class="timeline" id="edu_online"></ul></div></div></div>';
+const HTMLworkStart = '<div class="container content" ><div class="row"><div class="col s12 m12 l12"><ul class="timeline" id="work_entry" ></ul></div></div></div>';
+const HTMLschoolItem = '<li class="event" data-date="%date%"><h3>%name%---%degree%</h3><p><span class="iconfont">&#xe80b;</span> %location%</p><p>Major: %major%</p></li>';
+const HTMLCourseItem = '<li class="event" data-date="%date%"><h3>%course%--%school%</h3><p>%url%</p></li>';
+const HTMLWorkItem = '<li class="event" data-date="%date%"><h3>%title%---%employer%</h3><p><span class="iconfont">&#xe80b;</span> %location%</p><p>%descr%</p></li>';
+const HTMLProjectItem = '<div class="col-md-4"><div class="card"><img class="img-fluid" src="%image%"  alt="snap"/><div class="card_detail"><div class="card_title"><h5 class="text-thick c_title">%title%</h5><p class="c_title c_date">%date%</p></div><p>%descr%</p></div></div></div>';
 
 
 /*
