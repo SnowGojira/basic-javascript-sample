@@ -18,7 +18,7 @@ $(function () {
         welcomeMessage : "My name means snow, so I made a website with such a theme.Although I am a girl, I hope I can make some achievements in the field of programming, break the stereotype, and make my own contribution to the equality of men and women.",
         skills : ["Html5","Photoshop","Adobe Illustrator","Motion Graphic","Leadership"],
         biopic : "images/photo",
-        display : function () {
+        display : function displayBio() {
             /*display header*/
             bio_name.append(HTMLheaderName.replace("%data%",this.name));
             bio_name.append(HTMLheaderRole.replace("%data%",this.role));
@@ -80,7 +80,7 @@ $(function () {
                 url : "https://frontendmasters.com/"
             }
         ],
-        display : function () {
+        display : function displayEducations() {
 
             $("#edu_timeline").append(HTMLschoolStart);
 
@@ -143,7 +143,7 @@ $(function () {
                 description: "Charged for all the company's technical operations and consultation."
             }
         ],
-        display : function () {
+        display : function displayWorks() {
             $('#work_timeline').append(HTMLworkStart);
             let jobs = this.jobs;
             jobs.forEach(function (item) {
@@ -213,7 +213,7 @@ $(function () {
                 images : "images/8-480_xm.jpg"
             }
         ],
-        display : function () {
+        display : function displayProjects() {
             let projects = this.projects;
             projects.forEach(function (item) {
                 let img = item.images;
@@ -231,7 +231,7 @@ $(function () {
 });
 
 // Initialize and add the map
-function initMap() {
+var initMap = function initMap() {
     // The location of Uluru
     let chengdu = {lat: 30.67, lng: 104.06};
     // The map, centered at Uluru
@@ -239,5 +239,5 @@ function initMap() {
         document.getElementById('map'), {zoom: 10, center: chengdu});
     // The marker, positioned at Uluru
     let marker = new google.maps.Marker({position: chengdu, map: map});
-}
+};
 
