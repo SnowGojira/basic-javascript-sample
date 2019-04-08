@@ -2,11 +2,11 @@
 Create the json object will be used
  */
 $(function () {
-    let bio_name = $("#bio_name");
-    let bio_photo = $("#bio_photo");
-    let bio_intro = $("#bio_intro");
+    var bio_name = $("#bio_name");
+    var bio_photo = $("#bio_photo");
+    var bio_intro = $("#bio_intro");
 
-    let bio = {
+    var bio = {
         name : "HAKU HAL",
         role : "FRONT-END NINJA",
         contacts : {
@@ -33,14 +33,14 @@ $(function () {
             bio_intro.append(HTMLskillsStart);
 
             /*display all the contact path*/
-            let contact = $("#contact");
+            var contact = $("#contact");
             contact.append(HTMLmobile.replace("%data%",this.contacts.mobile));
             contact.append(HTMLemail.replace("%data%",this.contacts.email));
             contact.append(HTMLgithub.replace("%data%",this.contacts.github));
             contact.append(HTMLlocation.replace("%data%",this.contacts.location));
 
             /*display all the skills*/
-            let skills = this.skills;
+            var skills = this.skills;
             skills.forEach(function (item) {
                 $("#bio_skills").append(HTMLskills.replace("%data%",item)+" ");
             });
@@ -49,7 +49,7 @@ $(function () {
 
     bio.display();
 
-    let education = {
+    var education = {
         schools : [
             {
                 name : "DLUT",
@@ -85,8 +85,8 @@ $(function () {
             $("#edu_timeline").append(HTMLschoolStart);
 
             /*display university education*/
-            let schools = this.schools;
-            let edu_uni = $("#edu_uni");
+            var schools = this.schools;
+            var edu_uni = $("#edu_uni");
             schools.forEach(function (item) {
                 let date = item.dates;
                 let name = item.name;
@@ -103,8 +103,8 @@ $(function () {
             });
 
             /*display online education*/
-            let edu_online = $("#edu_online");
-            let onlineCourse = this.onlineCourses;
+            var edu_online = $("#edu_online");
+            var onlineCourse = this.onlineCourses;
             onlineCourse.forEach(function (item) {
                 let title,platform,dates,url,onlineCourseObj;
                 title = item.title;
@@ -119,7 +119,7 @@ $(function () {
     };
     education.display();
 
-    let work = {
+    var work = {
         jobs : [
             {
                 employer : "IBM",
@@ -145,7 +145,7 @@ $(function () {
         ],
         display : function displayWorks() {
             $('#work_timeline').append(HTMLworkStart);
-            let jobs = this.jobs;
+            var jobs = this.jobs;
             jobs.forEach(function (item) {
                 let employer, title, location, dates, descr;
                 employer = item.employer;
@@ -161,7 +161,7 @@ $(function () {
     };
 
     work.display();
-    let projects = {
+    var projects = {
         projects : [
             {
                 title : "Snow One",
@@ -214,7 +214,7 @@ $(function () {
             }
         ],
         display : function displayProjects() {
-            let projects = this.projects;
+            var projects = this.projects;
             projects.forEach(function (item) {
                 let img = item.images;
                 let title = item.title;
